@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cart - 2nd Hand Laptop Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-900 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-3xl font-bold text-blue-700">2nd Hand Laptop Store</h1>
+        <nav class="space-x-4 text-gray-700">
+          <a href="index.html" class="hover:text-blue-700">Home</a>
+          <a href="products.html" class="hover:text-blue-700">Products</a>
+          <a
+            href="cart.html"
+            class="hover:text-blue-700 font-semibold underline"
+            >Cart</a
+          >
+          <a href="contact.html" class="hover:text-blue-700">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Cart Section -->
+    <main class="max-w-5xl mx-auto px-4 py-12">
+      <h2 class="text-3xl font-bold mb-8">Shopping Cart</h2>
+
+      <!-- Empty Cart Message (you can toggle this with JS) -->
+      <!-- <p class="text-gray-600">Your cart is empty.</p> -->
+
+      <!-- Cart Table -->
+      <div class="overflow-x-auto bg-white rounded shadow">
+        <table class="w-full table-auto text-left">
+          <thead class="bg-gray-200 text-gray-700">
+            <tr>
+              <th class="p-4">Product</th>
+              <th class="p-4">Price</th>
+              <th class="p-4">Quantity</th>
+              <th class="p-4">Subtotal</th>
+              <th class="p-4">Remove</th>
+            </tr>
+          </thead>
+          <tbody id="cart-items">
+            <!-- Cart item example -->
+            <tr class="border-t">
+              <td class="p-4">
+                <div class="flex items-center gap-4">
+                  <img
+                    src="assets/images/laptop1.jpg"
+                    alt="Dell"
+                    class="w-16 h-16 rounded"
+                  />
+                  <span class="font-medium">Dell Inspiron 15</span>
+                </div>
+              </td>
+              <td class="p-4">₱18,000</td>
+              <td class="p-4">
+                <input
+                  type="number"
+                  value="1"
+                  min="1"
+                  class="w-16 border rounded px-2 py-1 text-center"
+                />
+              </td>
+              <td class="p-4 font-semibold">₱18,000</td>
+              <td class="p-4">
+                <button class="text-red-500 hover:text-red-700">Remove</button>
+              </td>
+            </tr>
+
+            <!-- Add more rows dynamically with JavaScript -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Cart Summary -->
+      <div class="mt-8 text-right">
+        <p class="text-xl font-bold mb-2">
+          Total: <span class="text-blue-700" id="cart-total">₱18,000</span>
+        </p>
+        <a
+          href="#"
+          class="inline-block mt-2 bg-blue-700 text-white px-6 py-3 rounded hover:bg-blue-800 transition"
+        >
+          Proceed to Checkout
+        </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-16 py-6 text-center text-gray-600 text-sm">
+      &copy; 2025 2nd Hand Laptop Store. All rights reserved.
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Products - 2nd Hand Laptop Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-900 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-3xl font-bold text-blue-700">2nd Hand Laptop Store</h1>
+        <nav class="space-x-4 text-gray-700">
+          <a href="index.html" class="hover:text-blue-700">Home</a>
+          <a
+            href="products.html"
+            class="hover:text-blue-700 font-semibold underline"
+            >Products</a
+          >
+          <a href="cart.html" class="hover:text-blue-700">Cart</a>
+          <a href="contact.html" class="hover:text-blue-700">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Products Grid -->
+    <main class="max-w-7xl mx-auto px-6 py-12">
+      <h2 class="text-3xl font-bold mb-8 text-gray-800">
+        Our Laptop Collection
+      </h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Product Card Example -->
+        <div
+          class="bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col"
+        >
+          <img
+            src="assets/images/laptop1.jpg"
+            alt="Dell Inspiron 15"
+            class="h-40 object-cover rounded mb-4"
+          />
+          <h3 class="font-semibold text-lg mb-1">Dell Inspiron 15</h3>
+          <p class="text-gray-600 text-sm mb-2">Intel i5, 8GB RAM, 256GB SSD</p>
+          <p class="font-bold text-blue-700 mb-4">₱18,000</p>
+          <button
+            class="mt-auto bg-blue-700 text-white py-2 rounded hover:bg-blue-800 transition"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <div
+          class="bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col"
+        >
+          <img
+            src="assets/images/laptop2.jpg"
+            alt="HP Pavilion 14"
+            class="h-40 object-cover rounded mb-4"
+          />
+          <h3 class="font-semibold text-lg mb-1">HP Pavilion 14</h3>
+          <p class="text-gray-600 text-sm mb-2">
+            Intel i7, 16GB RAM, 512GB SSD
+          </p>
+          <p class="font-bold text-blue-700 mb-4">₱28,500</p>
+          <button
+            class="mt-auto bg-blue-700 text-white py-2 rounded hover:bg-blue-800 transition"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <div
+          class="bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col"
+        >
+          <img
+            src="assets/images/laptop3.jpg"
+            alt="Lenovo ThinkPad X1"
+            class="h-40 object-cover rounded mb-4"
+          />
+          <h3 class="font-semibold text-lg mb-1">Lenovo ThinkPad X1</h3>
+          <p class="text-gray-600 text-sm mb-2">Intel i5, 8GB RAM, 256GB SSD</p>
+          <p class="font-bold text-blue-700 mb-4">₱22,000</p>
+          <button
+            class="mt-auto bg-blue-700 text-white py-2 rounded hover:bg-blue-800 transition"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Add more products here -->
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-16 py-6 text-center text-gray-600 text-sm">
+      &copy; 2025 2nd Hand Laptop Store. All rights reserved.
+    </footer>
+  </body>
+</html>
