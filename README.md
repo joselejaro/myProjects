@@ -1,1 +1,0 @@
-# Second Hand Laptops Store
